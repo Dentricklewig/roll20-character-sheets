@@ -14591,7 +14591,158 @@
 					{{/allprops()}}
 					
 				{{/debug}}
-					
+				
+
+				<!-- CUSTOM ACTIONS -->
+				<!--Saving Throw-->
+				{{#savethrow}}
+				<div class="sheet-row">
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-key">Stat</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-key">Roll</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-key">Adv</div>
+				</div>
+				
+				<div class="sheet-row">
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">FLAT</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_flat}}</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_flat_adv}}</div>
+				</div>
+				
+				<div class="sheet-row">
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">STR</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_strength}}</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_strength_adv}}</div>
+				</div>
+				
+				<div class="sheet-row">
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">DEX</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_dexterity}}</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_dexterity_adv}}</div>
+				</div>
+				
+				<div class="sheet-row">
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">CON</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_constitution}}</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_constitution_adv}}</div>
+				</div>
+				
+				<div class="sheet-row">
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">INT</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_intelligence}}</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_intelligence_adv}}</div>
+				</div>
+				
+				<div class="sheet-row">
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">WIS</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_wisdom}}</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_wisdom_adv}}</div>
+				</div>
+				
+				<div class="sheet-row">
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">CHA</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_charisma}}</div>
+					<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{save_charisma_adv}}</div>
+				</div>
+				{{/savethrow}}
+				
+				<!--Skill Check-->
+				{{#skillcheck}}
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-key">Skill</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-key">Roll</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-key">Adv</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Acrobatics</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_acrobatics}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_acrobatics_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Animal Handling</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_animalhandling}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_animalhandling_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Arcana</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_arcana}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_arcana_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Athletics</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_athletics}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_athletics_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Deception</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_deception}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_deception_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">History</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_history}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_history_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Insight</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_insight}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_insight_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Intimidation</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_intimidation}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_intimidation_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Investigation</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_investigation}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_investigation_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Medicine</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_medicine}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_medicine_adv}}</div>
+				</div>				
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Nature</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_nature}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_nature_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Perception</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_perception}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_perception_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Performance</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_performance}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_performance_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Persuasion</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_persuasion}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_persuasion_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Religion</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_religion}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_religion_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Sleight of Hand</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_sleightofhand}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_sleightofhand_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Stealth</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_stealth}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_stealth_adv}}</div>
+				</div>
+				<div class="sheet-row">
+					<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-rt-value">Survival</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_survival}}</div>
+					<div class="sheet-col-1-4 sheet-padl sheet-padr sheet-rt-value">{{skill_survival_adv}}</div>
+				</div>
+				{{/skillcheck}}
 			</div>
 		</div>
 
